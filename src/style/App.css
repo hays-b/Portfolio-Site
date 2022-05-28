@@ -2,6 +2,60 @@
   text-align: center;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background: rgb(31, 33, 33);
+  background: linear-gradient(180deg, rgb(31, 33, 33) 0%, rgb(41, 43, 43)100%);
+  box-shadow: 0 .01rem .1rem rgb(11, 13, 13);
+}
+
+.nav {
+  flex-grow: 1;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  color: white;
+  font-size: x-large;
+}
+
+.link {
+  margin-left: 5vw;
+  color: white;
+  font-size: large;
+  text-decoration: none;
+}
+
+/* ---------------- Portfolio ------------------ */
+.portfolio-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.portfolio-card {
+  border: .1vmin solid black;
+  padding: 2vmin;
+  margin: 4vmin;
+  background-color: white;
+}
+
+.portfolio-image {
+  width: 40vmin;
+  height: 40vmin;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -9,4 +63,9 @@
   right: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background: rgb(31, 33, 33);
+  background: linear-gradient(180deg, rgb(41, 43, 43) 0%, rgb(31, 33, 33)100%);
+  box-shadow: 0 .01rem .1rem rgb(11, 13, 13);
 }

@@ -1,14 +1,37 @@
 import React from "react";
-import retroSnake from '../images/retro-arcade-snake.png'
+import retroSnake from "../assets/retro-arcade-snake.png";
+import ews from '../assets/ews.png'
 
 const Portfolio = () => {
   return (
-    <div>
-      <div>
+    <div className="portfolio-page">
+      <div className="portfolio-card">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://elite-web-services.herokuapp.com/"
+        >
+          <img
+            className="portfolio-image"
+            src={ews}
+            alt="Elite Web Services"
+          />
+        </a>
+        <p>Elite Web Services</p>
+      </div>
+      <div className="portfolio-card">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://retro-arcade-snake.herokuapp.com/"
+        >
+          <img
+            className="portfolio-image"
+            src={retroSnake}
+            alt="Retro Arcade Snake"
+          />
+        </a>
         <p>Retro Arcade Snake</p>
-        <img src={retroSnake}
-        alt='retro arcade snake'
-        style={{width: '25vmin', height:'25vmin'}}/>
       </div>
     </div>
   );

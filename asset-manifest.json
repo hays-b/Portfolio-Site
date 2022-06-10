@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Site/static/css/main.521a3815.css",
+    "main.js": "/Portfolio-Site/static/js/main.8c21a500.js",
+    "static/media/retro-arcade-snake.png": "/Portfolio-Site/static/media/retro-arcade-snake.665408de581bc964921f.png",
+    "static/media/ews.png": "/Portfolio-Site/static/media/ews.5b6c2bcc1c84a81e5902.png",
+    "static/media/github.png": "/Portfolio-Site/static/media/github.77173d006f46a53ac279.png",
+    "static/media/fitness-tracker.jpg": "/Portfolio-Site/static/media/fitness-tracker.40a4421fc20ef1be2fb0.jpg",
+    "index.html": "/Portfolio-Site/index.html",
+    "main.521a3815.css.map": "/Portfolio-Site/static/css/main.521a3815.css.map",
+    "main.8c21a500.js.map": "/Portfolio-Site/static/js/main.8c21a500.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.521a3815.css",
+    "static/js/main.8c21a500.js"
+  ]
+}

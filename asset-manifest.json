@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio-Site/static/css/main.521a3815.css",
-    "main.js": "/Portfolio-Site/static/js/main.001180bc.js",
-    "static/media/retro-arcade-snake.png": "/Portfolio-Site/static/media/retro-arcade-snake.665408de581bc964921f.png",
-    "static/media/ews.png": "/Portfolio-Site/static/media/ews.5b6c2bcc1c84a81e5902.png",
-    "static/media/github.png": "/Portfolio-Site/static/media/github.77173d006f46a53ac279.png",
-    "static/media/fitness-tracker.jpg": "/Portfolio-Site/static/media/fitness-tracker.40a4421fc20ef1be2fb0.jpg",
-    "index.html": "/Portfolio-Site/index.html",
-    "main.521a3815.css.map": "/Portfolio-Site/static/css/main.521a3815.css.map",
-    "main.001180bc.js.map": "/Portfolio-Site/static/js/main.001180bc.js.map"
+    "main.css": "/static/css/main.521a3815.css",
+    "main.js": "/static/js/main.607e884e.js",
+    "static/media/retro-arcade-snake.png": "/static/media/retro-arcade-snake.665408de581bc964921f.png",
+    "static/media/ews.png": "/static/media/ews.5b6c2bcc1c84a81e5902.png",
+    "static/media/github.png": "/static/media/github.77173d006f46a53ac279.png",
+    "static/media/fitness-tracker.jpg": "/static/media/fitness-tracker.40a4421fc20ef1be2fb0.jpg",
+    "index.html": "/index.html",
+    "main.521a3815.css.map": "/static/css/main.521a3815.css.map",
+    "main.607e884e.js.map": "/static/js/main.607e884e.js.map"
   },
   "entrypoints": [
     "static/css/main.521a3815.css",
-    "static/js/main.001180bc.js"
+    "static/js/main.607e884e.js"
   ]
 }

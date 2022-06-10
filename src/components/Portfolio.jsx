@@ -38,7 +38,7 @@ const Portfolio = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://retro-arcade-snake.herokuapp.com/"
+          href="https://fitness-tracker-react-app.herokuapp.com/"
         >
           <img
             className="portfolio-image"

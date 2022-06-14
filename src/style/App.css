@@ -22,11 +22,13 @@
   margin-left: 10vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .name {
   color: white;
   font-size: x-large;
+  text-decoration: none;
 }
 
 .link {
@@ -39,21 +41,51 @@
 /* ---------------- Portfolio ------------------ */
 .portfolio-page {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .portfolio-card {
-  border: .1vmin solid black;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid gray;
   padding: 2vmin;
   margin: 4vmin;
   background-color: white;
+  transition: .3s;
 }
 
+.portfolio-card:hover {
+  box-shadow: 0 0 1vmin 1vmin gray;
+  margin: 3.5vmin;
+  transition: .3s;
+}
+
+
 .portfolio-image {
+  border: 1px solid gray;
+  border-radius: 5px;
   width: 40vmin;
   height: 40vmin;
+  transition: .3s;
+}
+
+.portfolio-card:hover .portfolio-image {
+  width: 41vmin;
+  height: 41vmin;
+  transition: .3s;
+}
+
+.gray {
+  color: rgba(128, 128, 128, 0);
+  transition: .3s;
+}
+
+.portfolio-card:hover .gray {
+  color: rgba(128, 128, 128, 100);
+  transition: 1s;
 }
 
 .footer {

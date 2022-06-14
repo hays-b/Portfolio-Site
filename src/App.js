@@ -1,9 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
+import { Header, Home, Footer, Portfolio, EliteWebServices } from "./components";
 import "./style/App.css";
 
 const App = () => {
@@ -14,6 +11,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/elite-web-services" element={<EliteWebServices />} />
         </Routes>
         <Footer />
       </div>

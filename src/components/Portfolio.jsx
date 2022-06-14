@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import retroSnake from "../assets/retro-arcade-snake.png";
 import ews from '../assets/ews.png'
 import fitness from '../assets/fitness-tracker.jpg'
@@ -6,20 +7,15 @@ import fitness from '../assets/fitness-tracker.jpg'
 const Portfolio = () => {
   return (
     <div className="portfolio-page">
-      <div className="portfolio-card">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://elite-web-services.herokuapp.com/"
-        >
+        <Link to='/portfolio/elite-web-services' className="portfolio-card">
           <img
             className="portfolio-image"
             src={ews}
             alt="Elite Web Services"
           />
-        </a>
         <p>Elite Web Services</p>
-      </div>
+        <p className='gray'>Click for more details</p>
+      </Link>
       <div className="portfolio-card">
         <a
           target="_blank"
@@ -33,6 +29,7 @@ const Portfolio = () => {
           />
         </a>
         <p>Retro Arcade Snake</p>
+        <p className='gray'>Click for more details</p>
       </div>
       <div className="portfolio-card">
         <a
@@ -47,6 +44,7 @@ const Portfolio = () => {
           />
         </a>
         <p>Fitness Tracker</p>
+        <p className='gray'>Click for more details</p>
       </div>
     </div>
   );

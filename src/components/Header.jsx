@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="nav">
-        <span className='name'>Hays Bondy</span>
+        <Link className='name' to="/">Hays Bondy</Link>
         <span>
           <Link className='link' to="/">Home</Link>
           <Link className='link' to="/portfolio">Portfolio</Link>

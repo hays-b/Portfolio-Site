@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.521a3815.css",
-    "main.js": "/static/js/main.29b57b97.js",
+    "main.css": "/static/css/main.ea5a6339.css",
+    "main.js": "/static/js/main.6fc9d0f4.js",
     "static/media/retro-arcade-snake.png": "/static/media/retro-arcade-snake.665408de581bc964921f.png",
     "static/media/William-Hays-Bondy.pdf": "/static/media/William-Hays-Bondy.c0cf22568d747a931d2c.pdf",
     "static/media/ews.png": "/static/media/ews.5b6c2bcc1c84a81e5902.png",
     "static/media/github.png": "/static/media/github.77173d006f46a53ac279.png",
     "static/media/fitness-tracker.jpg": "/static/media/fitness-tracker.40a4421fc20ef1be2fb0.jpg",
     "index.html": "/index.html",
-    "main.521a3815.css.map": "/static/css/main.521a3815.css.map",
-    "main.29b57b97.js.map": "/static/js/main.29b57b97.js.map"
+    "main.ea5a6339.css.map": "/static/css/main.ea5a6339.css.map",
+    "main.6fc9d0f4.js.map": "/static/js/main.6fc9d0f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.521a3815.css",
-    "static/js/main.29b57b97.js"
+    "static/css/main.ea5a6339.css",
+    "static/js/main.6fc9d0f4.js"
   ]
 }

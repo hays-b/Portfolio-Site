@@ -44,17 +44,26 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow-y: scroll;
 }
 
 .portfolio-card {
   border-radius: 5px;
-  color: rgb(206, 206, 206);
   text-decoration: none;
   border: 1px solid rgb(74, 74, 74);
   /* box-shadow: 0 0 5px 1px gray; */
-  padding: 2vmin;
+  padding: 2vmin 2vmin 0 2vmin;
   margin: 3.5vmin 2vmin 0.5vmin 2vmin;
   /* background-color: white; */
+  transition: .3s;
+}
+
+.portfolio-title {
+  margin: 0;
+  padding: 1vmin;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(206, 206, 206);
   transition: .3s;
 }
 
@@ -83,14 +92,21 @@
   border: 1px solid gray;
 }
 
+.portfolio-card:hover .portfolio-title {
+  color: rgb(255, 255, 255);
+  transition: .3s;
+}
+
 .gray {
+  margin: 0;
+  padding-bottom: 1vmin;
   color: rgba(128, 128, 128, 0);
   transition: .3s;
 }
 
 .portfolio-card:hover .gray {
   color: rgba(128, 128, 128, 100);
-  transition: 1s;
+  transition: 1.5s;
 }
 
 /* ---------------- Contact-page ------------------ */

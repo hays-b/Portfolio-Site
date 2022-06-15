@@ -12,8 +12,8 @@ const Portfolio = () => {
             className="portfolio-image"
             src={ews}
             alt="Elite Web Services"
-          />
-        <p>Elite Web Services</p>
+            />
+            <p className='portfolio-title'>Elite Web Services</p>
         <p className='gray'>Click for more details</p>
       </Link>
       <div className="portfolio-card">
@@ -28,7 +28,7 @@ const Portfolio = () => {
             alt="Retro Arcade Snake"
           />
         </a>
-        <p>Retro Arcade Snake</p>
+        <p className='portfolio-title'>Retro Arcade Snake</p>
         <p className='gray'>Click for more details</p>
       </div>
       <div className="portfolio-card">
@@ -43,7 +43,7 @@ const Portfolio = () => {
             alt="Fitness Tracker"
           />
         </a>
-        <p>Fitness Tracker</p>
+        <p className='portfolio-title'>Fitness Tracker</p>
         <p className='gray'>Click for more details</p>
       </div>
     </div>

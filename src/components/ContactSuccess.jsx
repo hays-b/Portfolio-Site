@@ -5,8 +5,8 @@ const ContactSuccess = () => {
 
   return (
       <div>
-          <p>Thank you for contacting me! You should receive a confirmation email shortly. And I will reach out to you as soon as I can!</p>
-          <Link to='/'>Go back to home page</Link>
+          <p>Thank you for contacting me! You should receive a confirmation email within a few minutes.</p>
+          <Link to='/'>Return to home page</Link>
 
     </div>
   );

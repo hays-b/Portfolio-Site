@@ -10,6 +10,7 @@ const Header = () => {
         <span>
           <Link className='link' to="/">Home</Link>
           <Link className='link' to="/portfolio">Portfolio</Link>
+          <Link className='link' to="/contact">Contact Me</Link>
           <a className='link' href={resume}>Resume</a>
         </span>
       </div>

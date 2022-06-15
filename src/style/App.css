@@ -41,25 +41,26 @@
 /* ---------------- Portfolio ------------------ */
 .portfolio-page {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .portfolio-card {
   border-radius: 5px;
-  color: black;
+  color: white;
   text-decoration: none;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
+  box-shadow: 0 0 5px 1px gray;
   padding: 2vmin;
-  margin: 4vmin;
-  background-color: white;
+  margin: 3.5vmin 2vmin 0.5vmin 2vmin;
+  /* background-color: white; */
   transition: .3s;
 }
 
 .portfolio-card:hover {
-  box-shadow: 0 0 1vmin 1vmin gray;
-  margin: 3.5vmin;
+  margin: 3vmin 1.75vmin 0 1.75vmin;
+  box-shadow: 0 0 1vmin 5px white;
   transition: .3s;
 }
 
@@ -73,8 +74,8 @@
 }
 
 .portfolio-card:hover .portfolio-image {
-  width: 41vmin;
-  height: 41vmin;
+  width: 40.5vmin;
+  height: 40.5vmin;
   transition: .3s;
 }
 

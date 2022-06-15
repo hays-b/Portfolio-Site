@@ -3,3 +3,5 @@ export { default as Home } from "./Home";
 export { default as Footer } from "./Footer";
 export { default as Portfolio } from "./Portfolio";
 export { default as EliteWebServices} from "./portfolio/EliteWebServices";
+export { default as Contact } from "./Contact";
+export { default as ContactSuccess } from "./ContactSuccess";

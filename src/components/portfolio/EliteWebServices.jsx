@@ -1,5 +1,4 @@
 import React from "react";
-import ews from '../../assets/ews.png'
 
 const EliteWebServices = () => {
   return (
@@ -8,16 +7,12 @@ const EliteWebServices = () => {
           target="_blank"
           rel="noopener noreferrer"
           href="https://elite-web-services.herokuapp.com/"
-        >
-      <div className="portfolio-card">
-          <img
-            className="portfolio-image"
-            src={ews}
-            alt="Elite Web Services"
-          />
-        <p>Elite Web Services</p>
-      </div>
-        </a>
+        >See live site</a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/Elite-Web-Services/Elite-Web-Services"
+        >See source code</a>
     </div>
   );
 };

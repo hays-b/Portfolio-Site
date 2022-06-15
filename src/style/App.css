@@ -4,6 +4,7 @@
 
 .header {
   position: sticky;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -109,6 +110,85 @@
   transition: 1.5s;
 }
 
+/* ---------------- single-view-page ------------------ */
+.single-view-page {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.carousel {
+  border: 1px solid white;
+  background-color: black;
+  padding: 0;
+  position: relative;
+  width: 75%;
+  height: 25em;
+  overflow: hidden;
+  margin: 5em 0;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-btn {
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin: 2rem;
+  color: white;
+  font-weight: bolder;
+  font-size: xx-large;
+  background-color: rgb(0, 0, 0, .1);
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.slide {
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  opacity: 0;
+  transition: 1s;
+  /* width: 100%; */
+}
+
+.count {
+  margin: 0;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.active {
+  opacity: 100;
+  transition: 1s;
+}
+
+.carousel-img {
+  width: 100%;
+}
+
 /* ---------------- Contact-page ------------------ */
 
 .error {
@@ -159,6 +239,7 @@
 
 .footer {
   position: fixed;
+  z-index: 2;
   bottom: 0;
   left: 0;
   right: 0;

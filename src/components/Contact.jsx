@@ -22,6 +22,7 @@ const Contact = ({ setIsLoading }) => {
       .then(
         (result) => {
           setSubmitError("");
+          setIsLoading(false)
           navigate("/contact/success", { replace: true });
         },
         (error) => {

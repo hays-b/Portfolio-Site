@@ -56,15 +56,15 @@ const SingleViewPage = ({ project, setIsLoading }) => {
       <div className="a-ctn">
         <a
           className="single-link"
-          href={project.siteUrl}
-          onClick={()=>{setIsLoading(true)}}
+            href={project.siteUrl}
+          onClick={() => {
+            setIsLoading(true)
+            .then (setIsLoading(false))
+          }}
         >
           See live site
         </a>
-        <a
-          className="single-link"
-          href={project.codeUrl}
-        >
+        <a className="single-link" href={project.codeUrl}>
           See source code
         </a>
       </div>

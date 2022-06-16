@@ -4,7 +4,7 @@
 
 .header {
   position: sticky;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   right: 0;
@@ -296,9 +296,42 @@
 
 }
 
+/* ------------------- Loading ------------------- */
+
+.loading {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.2);
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.message {
+  min-width: 480px;
+  padding: 3rem;
+
+  box-shadow: 0 2px 8px black;
+  background: white;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------- Footer ------------------- */
 .footer {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   bottom: 0;
   left: 0;
   right: 0;

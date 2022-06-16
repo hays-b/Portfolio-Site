@@ -1,7 +1,6 @@
 import React, { useState, Fragment } from "react";
 
 const SingleViewPage = ({ project }) => {
-    console.log(project)
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {

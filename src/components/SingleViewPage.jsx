@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from "react";
 
-const SingleViewPage = ({ project }) => {
+const SingleViewPage = ({ project, setIsLoading }) => {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
@@ -56,16 +56,13 @@ const SingleViewPage = ({ project }) => {
       <div className="a-ctn">
         <a
           className="single-link"
-          target="_blank"
-          rel="noopener noreferrer"
           href={project.siteUrl}
+          onClick={()=>{setIsLoading(true)}}
         >
           See live site
         </a>
         <a
           className="single-link"
-          target="_blank"
-          rel="noopener noreferrer"
           href={project.codeUrl}
         >
           See source code

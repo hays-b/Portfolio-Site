@@ -298,7 +298,7 @@
 
 /* ------------------- Loading ------------------- */
 
-.loading {
+.loading-screen {
   position: fixed;
 
   top: 0;
@@ -308,24 +308,51 @@
 
   backdrop-filter: blur(3px);
   background: rgba(0, 0, 0, 0.2);
-  
-  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
 }
 
-.message {
-  min-width: 480px;
-  padding: 3rem;
+.loading-container {
+  height: 50vmin;
+  width: 80vmin;
+  border-radius: 5vmin;
+  box-shadow: 0 0 5vmin black;
+  background: rgb(228, 233, 234, .8);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3vmin;
+  margin: 0;
+  overflow: hidden;
+}
 
-  box-shadow: 0 2px 8px black;
-  background: white;
+.loading-animation {
+  padding: 5vmin 0 0 0;
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+  height: 45vmin;
+}
 
+.loading-message {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: larger;
+  width: 70vmin;
+  margin: 0;
+  color: rgb(42, 53, 52);
+  padding-bottom: 2vmin;
+  border-bottom: 1px solid black;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .loading-message {
+    font-size: large;
+  }
 }
 
 /* ------------------- Footer ------------------- */

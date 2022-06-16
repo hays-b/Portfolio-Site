@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+const Contact = ({ setIsLoading }) => {
   const { REACT_APP_API_KEY } = process.env;
   const form = useRef();
   const [submitError, setSubmitError] = useState("this is the submit error");
@@ -10,6 +10,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true)
 
     emailjs
       .sendForm(
@@ -24,6 +25,7 @@ const Contact = () => {
           navigate("/contact/success", { replace: true });
         },
         (error) => {
+          setIsLoading(false)
           setSubmitError(error.text);
         }
       );

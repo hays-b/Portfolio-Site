@@ -13,7 +13,7 @@ const Loading = () => {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../assets/heroku-lottie.json"),
+      animationData: require("../assets/lottie-heroku.json"),
     });
   }, []);
 
@@ -23,7 +23,7 @@ const Loading = () => {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../assets/email-lottie.json"),
+      animationData: require("../assets/lottie-email.json"),
     });
   }, []);
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import gitHub from '../assets/github.png'
-import linkedIn from '../assets/linkedin.png'
+import { linkedIn, gitHub } from '../assets'
 
 const Header = () => {
   return (

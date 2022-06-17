@@ -1,6 +1,26 @@
-const ews = require("./assets/ews.png");
-const fitness = require("./assets/fitness-tracker.jpg");
-const snake = require("./assets/retro-arcade-snake.png");
+const {
+  ewsThumbnail,
+  ewsProducts,
+  ewsSingle,
+  ewsCheckout,
+  ewsAdmin,
+  ewsEdit,
+} = require("./assets/elite-web-services");
+const {
+  arcadeThumbnail,
+  arcadeHome,
+  arcadeHighscores,
+  arcadeSettings,
+  arcadeNew,
+  arcadeGame,
+  arcadeTitle,
+} = require("./assets/retro-arcade-snake");
+const {
+  fitnessThumbnail,
+  fitnessHome,
+  fitnessRoutines,
+  fitnessEdit,
+} = require("./assets/fitness-tracker");
 
 const portfolioData = [
   // ------------ Elite Web Services start --------------
@@ -10,17 +30,29 @@ const portfolioData = [
     siteUrl: "https://elite-web-services.herokuapp.com/",
     codeUrl: "https://github.com/Elite-Web-Services/Elite-Web-Services",
     img: {
-      src: ews,
+      src: ewsThumbnail,
       alt: "Elite Web Services",
     },
     carousel: [
       {
-        src: fitness,
-        alt: "fitness",
+        src: ewsProducts,
+        alt: "Products Page",
       },
       {
-        src: snake,
-        alt: "retro-arcade-snake",
+        src: ewsSingle,
+        alt: "Single Product View",
+      },
+      {
+        src: ewsCheckout,
+        alt: "Checkout",
+      },
+      {
+        src: ewsAdmin,
+        alt: "Admin Functionality",
+      },
+      {
+        src: ewsEdit,
+        alt: "Editing a Product",
       },
     ],
     description: [
@@ -37,17 +69,33 @@ const portfolioData = [
     siteUrl: "https://retro-arcade-snake.herokuapp.com/",
     codeUrl: "https://github.com/hays-b/Arcade-Snake",
     img: {
-      src: snake,
+      src: arcadeThumbnail,
       alt: "Retro Arcade Snake",
     },
     carousel: [
       {
-        src: fitness,
-        alt: "fitness",
+        src: arcadeHome,
+        alt: "Main Menu",
       },
       {
-        src: snake,
-        alt: "retro-arcade-snake",
+        src: arcadeHighscores,
+        alt: "View All Highscores",
+      },
+      {
+        src: arcadeSettings,
+        alt: "Game Settings",
+      },
+      {
+        src: arcadeNew,
+        alt: "New Highscore Pop Up",
+      },
+      {
+        src: arcadeGame,
+        alt: "Playing the Game",
+      },
+      {
+        src: arcadeTitle,
+        alt: "Title Art",
       },
     ],
     description: [
@@ -64,17 +112,21 @@ const portfolioData = [
     siteUrl: "https://fitness-tracker-react-app.herokuapp.com/",
     codeUrl: "https://github.com/hays-b/FitnessTracker-fullstack",
     img: {
-      src: fitness,
+      src: fitnessThumbnail,
       alt: "Fitness Tracker",
     },
     carousel: [
       {
-        src: fitness,
-        alt: "fitness",
+        src: fitnessHome,
+        alt: "Home Page",
       },
       {
-        src: snake,
-        alt: "retro-arcade-snake",
+        src: fitnessRoutines,
+        alt: "View Other User's Routines",
+      },
+      {
+        src: fitnessEdit,
+        alt: "Edit Your Own Routines",
       },
     ],
     description: [

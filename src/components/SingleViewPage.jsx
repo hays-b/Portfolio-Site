@@ -1,6 +1,13 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment, useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
 
 const SingleViewPage = ({ project, setIsLoading }) => {
+
+    useEffect(() => {
+        setIsLoading(false)
+        // eslint-disable-next-line
+      }, []);
+
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
@@ -58,8 +65,9 @@ const SingleViewPage = ({ project, setIsLoading }) => {
           className="single-link"
             href={project.siteUrl}
           onClick={() => {
-            setIsLoading(true)
-            .then (setIsLoading(false))
+              setIsLoading(true)
+            //   .then(setIsLoading(false))
+            //   .then(window.location.reload())
           }}
         >
           See live site

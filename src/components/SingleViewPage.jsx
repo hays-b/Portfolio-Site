@@ -1,18 +1,23 @@
-import React, { useState, Fragment, useLayoutEffect } from "react";
+import React, { useState, Fragment, useEffect } from "react";
+// import { useNavigate } from "react-router-dom"
 import LoadingHeroku from "./LoadingHeroku";
 
 const SingleViewPage = ({ project }) => {
   const [isLoading, setIsLoading] = useState(false);
-  console.log('hello outside useEffect')
+  let mobileFix = false
 
-  useLayoutEffect(() => {
-    if (isLoading) {
-      setIsLoading(false);
-      console.log('hello inside useEffect if statement')
-    }
-    console.log('hello inside useEffect')
-    // eslint-disable-next-line
-  }, [window.location.href]);
+  if (mobileFix) {
+    setIsLoading(false)
+  }
+
+//   useEffect(() => {
+//     console.log(window.navigator)
+//     if (isLoading) {
+//       setIsLoading(false);
+//       console.log('hello inside useEffect if statement')
+//     }
+//     // eslint-disable-next-line
+//   }, [window]);
 
   const [current, setCurrent] = useState(0);
 
@@ -74,6 +79,7 @@ const SingleViewPage = ({ project }) => {
             href={project.siteUrl}
             onClick={() => {
               setIsLoading(true);
+              mobileFix = true
             }}
           >
             See live site

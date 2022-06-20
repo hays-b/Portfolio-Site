@@ -6,7 +6,7 @@ const SingleViewPage = ({ project, setIsLoading }) => {
     useEffect(() => {
         setIsLoading(false)
         // eslint-disable-next-line
-      }, []);
+      }, [window.location]);
 
   const [current, setCurrent] = useState(0);
 
@@ -66,8 +66,6 @@ const SingleViewPage = ({ project, setIsLoading }) => {
             href={project.siteUrl}
           onClick={() => {
               setIsLoading(true)
-            //   .then(setIsLoading(false))
-            //   .then(window.location.reload())
           }}
         >
           See live site

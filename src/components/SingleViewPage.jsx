@@ -1,15 +1,18 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment, useEffect } from "react";
 import LoadingHeroku from "./LoadingHeroku";
 
 const SingleViewPage = ({ project }) => {
   const [isLoading, setIsLoading] = useState(false);
+  console.log('hello outside useEffect')
 
-//   useEffect(() => {
-//     if (isLoading) {
-//       setIsLoading(false);
-//     }
-//     // eslint-disable-next-line
-//   }, [window.location]);
+  useEffect(() => {
+    if (isLoading) {
+      setIsLoading(false);
+      console.log('hello inside useEffect if statement')
+    }
+    console.log('hello inside useEffect')
+    // eslint-disable-next-line
+  }, []);
 
   const [current, setCurrent] = useState(0);
 

@@ -1,8 +1,18 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import LoadingEmail from "./LoadingEmail"
 
-const Contact = ({ setIsLoading }) => {
+const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  // useEffect(() => {
+  //   if (isLoading) {
+  //     setIsLoading(false);
+  //   }
+  //   // eslint-disable-next-line
+  // }, [window.location]);
+
   const { REACT_APP_API_KEY } = process.env;
   const form = useRef();
   const [submitError, setSubmitError] = useState("this is the submit error");
@@ -33,6 +43,8 @@ const Contact = ({ setIsLoading }) => {
   };
 
   return (
+    <>
+    {isLoading ? <LoadingEmail /> : null}
     <div className="contact-page">
       {submitError ? <p className='error'>Unable to send: {submitError}</p> : null}
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
@@ -62,6 +74,7 @@ const Contact = ({ setIsLoading }) => {
         <input type="submit" value="Send" />
       </form>
     </div>
+    </>
   );
 };
 

@@ -1,12 +1,15 @@
-import React, { useState, Fragment, useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
+import React, { useState, Fragment } from "react";
+import LoadingHeroku from "./LoadingHeroku";
 
-const SingleViewPage = ({ project, setIsLoading }) => {
+const SingleViewPage = ({ project }) => {
+  const [isLoading, setIsLoading] = useState(false);
 
-    useEffect(() => {
-        setIsLoading(false)
-        // eslint-disable-next-line
-      }, [window.location]);
+//   useEffect(() => {
+//     if (isLoading) {
+//       setIsLoading(false);
+//     }
+//     // eslint-disable-next-line
+//   }, [window.location]);
 
   const [current, setCurrent] = useState(0);
 
@@ -23,61 +26,64 @@ const SingleViewPage = ({ project, setIsLoading }) => {
   };
 
   return (
-    <div className="single-view-page">
-      <ul className="carousel">
-        <button
-          className="carousel-btn left"
-          onClick={() => {
-            prevSlide();
-          }}
-        >
-          {"<"}
-        </button>
-        <button
-          className="carousel-btn right"
-          onClick={() => {
-            nextSlide();
-          }}
-        >
-          {">"}
-        </button>
-        <p className="count">
-          {current + 1} of {project.carousel.length}
-        </p>
-        {project.carousel.map((pic, idx) => {
-          return (
-            <Fragment key={"carousel" + idx}>
-              <div className={idx === current ? "slide active" : "slide"}>
-                <img className="carousel-img" alt={pic.alt} src={pic.src} />
-              </div>
-              <button className="dot" onClick={() => setSlide(idx)}>
-                <div
-                  className={idx === current ? "white highlight" : "white"}
-                ></div>
-              </button>
-            </Fragment>
-          );
-        })}
-      </ul>
-      <h1 className="single-title">{project.title}</h1>
-      <div className="a-ctn">
-        <a
-          className="single-link"
+    <>
+      {isLoading ? <LoadingHeroku /> : null}
+      <div className="single-view-page">
+        <ul className="carousel">
+          <button
+            className="carousel-btn left"
+            onClick={() => {
+              prevSlide();
+            }}
+          >
+            {"<"}
+          </button>
+          <button
+            className="carousel-btn right"
+            onClick={() => {
+              nextSlide();
+            }}
+          >
+            {">"}
+          </button>
+          <p className="count">
+            {current + 1} of {project.carousel.length}
+          </p>
+          {project.carousel.map((pic, idx) => {
+            return (
+              <Fragment key={"carousel" + idx}>
+                <div className={idx === current ? "slide active" : "slide"}>
+                  <img className="carousel-img" alt={pic.alt} src={pic.src} />
+                </div>
+                <button className="dot" onClick={() => setSlide(idx)}>
+                  <div
+                    className={idx === current ? "white highlight" : "white"}
+                  ></div>
+                </button>
+              </Fragment>
+            );
+          })}
+        </ul>
+        <h1 className="single-title">{project.title}</h1>
+        <div className="a-ctn">
+          <a
+            className="single-link"
             href={project.siteUrl}
-          onClick={() => {
-              setIsLoading(true)
-          }}
-        >
-          See live site
-        </a>
-        <a className="single-link" href={project.codeUrl}>
-          See source code
-        </a>
+            onClick={() => {
+              setIsLoading(true);
+            }}
+          >
+            See live site
+          </a>
+          <a className="single-link" href={project.codeUrl}>
+            See source code
+          </a>
+        </div>
+        {project.description.map((paragraph, idx) => {
+          return <p key={"description" + idx}>{paragraph}</p>;
+        })}
       </div>
-      {project.description.map((paragraph, idx) => {
-        return <p key={"description" + idx}>{paragraph}</p>;
-      })}
-    </div>
+    </>
   );
 };
 

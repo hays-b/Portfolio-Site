@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
 
-const LoadingHeroku = () => {
+const LoadingHeroku = ({siteUrl}) => {
   const building = useRef(null);
 
   useEffect(() => {
@@ -13,6 +13,8 @@ const LoadingHeroku = () => {
       animationData: require("../assets/lottie-heroku.json"),
     });
   }, []);
+
+  window.location.replace(siteUrl)
 
   return (
     <>

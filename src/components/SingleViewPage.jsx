@@ -1,23 +1,18 @@
+// LoadingHeroku is commented out until I can resolve a rendering bug for IOS users
+
 import React, { useState, Fragment, useEffect } from "react";
-// import { useNavigate } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom";
 import LoadingHeroku from "./LoadingHeroku";
 
 const SingleViewPage = ({ project }) => {
   const [isLoading, setIsLoading] = useState(false);
-  let mobileFix = false
+  const location = useLocation()
 
-  if (mobileFix) {
-    setIsLoading(false)
-  }
-
-//   useEffect(() => {
-//     console.log(window.navigator)
-//     if (isLoading) {
-//       setIsLoading(false);
-//       console.log('hello inside useEffect if statement')
-//     }
-//     // eslint-disable-next-line
-//   }, [window]);
+  useEffect(() => {
+    if (location.hash) {
+      setIsLoading(true);
+    }
+  }, [location.hash]);
 
   const [current, setCurrent] = useState(0);
 
@@ -35,7 +30,9 @@ const SingleViewPage = ({ project }) => {
 
   return (
     <>
-      {isLoading ? <LoadingHeroku /> : null}
+      {isLoading ? (
+        <LoadingHeroku siteUrl={project.siteUrl} />
+      ) : null}
       <div className="single-view-page">
         <ul className="carousel">
           <button
@@ -74,16 +71,9 @@ const SingleViewPage = ({ project }) => {
         </ul>
         <h1 className="single-title">{project.title}</h1>
         <div className="a-ctn">
-          <a
-            className="single-link"
-            href={project.siteUrl}
-            onClick={() => {
-              setIsLoading(true);
-              mobileFix = true
-            }}
-          >
+          <Link className="single-link" to="#loading">
             See live site
-          </a>
+          </Link>
           <a className="single-link" href={project.codeUrl}>
             See source code
           </a>

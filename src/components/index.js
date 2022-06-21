@@ -5,3 +5,4 @@ export { default as Portfolio } from "./Portfolio";
 export { default as Contact } from "./Contact";
 export { default as ContactSuccess } from "./ContactSuccess";
 export { default as SingleViewPage } from "./SingleViewPage";
+export { default as NavMenu } from "./NavMenu";

@@ -1,14 +1,14 @@
 import React from 'react';
 import { linkedIn, gitHub } from '../assets'
 
-const Header = () => {
+const Header = ({ activeNav }) => {
   return (
-    <div className='footer'>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/hays-b">
-        <img src={gitHub} alt='GitHub' style={{width:'3rem', height:'3rem'}}/>
+    <div className={activeNav ? 'footer moved': 'footer'}>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/hays-b" className='footer-ctn'>
+        <img src={gitHub} alt='GitHub' className='footer-icon'/>
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hays-bondy/">
-        <img src={linkedIn} alt='LinkedIn' style={{width:'3rem', height:'3rem'}}/>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hays-bondy/" className='footer-ctn'>
+        <img src={linkedIn} alt='LinkedIn' className='footer-icon'/>
         </a>
     </div>
   );

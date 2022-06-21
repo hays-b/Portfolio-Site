@@ -1,12 +1,10 @@
-// LoadingHeroku is commented out until I can resolve a rendering bug for IOS users
-
 import React, { useState, Fragment, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import LoadingHeroku from "./LoadingHeroku";
 
 const SingleViewPage = ({ project }) => {
   const [isLoading, setIsLoading] = useState(false);
-  const location = useLocation()
+  const location = useLocation();
 
   useEffect(() => {
     if (location.hash) {
@@ -30,9 +28,7 @@ const SingleViewPage = ({ project }) => {
 
   return (
     <>
-      {isLoading ? (
-        <LoadingHeroku siteUrl={project.siteUrl} />
-      ) : null}
+      {isLoading ? <LoadingHeroku siteUrl={project.siteUrl} /> : null}
       <div className="single-view-page">
         <ul className="carousel">
           <button
@@ -71,7 +67,12 @@ const SingleViewPage = ({ project }) => {
         </ul>
         <h1 className="single-title">{project.title}</h1>
         <div className="a-ctn">
-          <Link className="single-link" to="#loading">
+          <Link
+            className="single-link"
+            to="#loading"
+            // Because IOS devices don't fire useEffects upon navigating back, I added a URL hash which renders the loading component.
+            // Then once in the LoadingHeroku component, the current URL is replaced with the live site URL, so the #loading route is erased from the location history.
+          >
             See live site
           </Link>
           <a className="single-link" href={project.codeUrl}>
@@ -79,7 +80,7 @@ const SingleViewPage = ({ project }) => {
           </a>
         </div>
         {project.description.map((paragraph, idx) => {
-          return <p key={"description" + idx}>{paragraph}</p>;
+          return <p key={"description" + idx} className='description'>{paragraph}</p>;
         })}
       </div>
     </>

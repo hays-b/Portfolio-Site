@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   Header,
@@ -8,15 +8,19 @@ import {
   ContactSuccess,
   Portfolio,
   SingleViewPage,
+  NavMenu,
 } from "./components";
 import "./style/App.css";
 import portfolioData from "./portfolioData";
 
 const App = () => {
+  const [activeNav, setActiveNav] = useState(false);
+
   return (
     <BrowserRouter>
-      <div className="App">
-        <Header />
+      <div className={activeNav ? "App moved": "App"}>
+        <Header setActiveNav={setActiveNav} />
+        <NavMenu setActiveNav={setActiveNav} activeNav={activeNav} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
@@ -32,7 +36,7 @@ const App = () => {
             );
           })}
         </Routes>
-        <Footer />
+        <Footer activeNav={activeNav}/>
       </div>
     </BrowserRouter>
   );

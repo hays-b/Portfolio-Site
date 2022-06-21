@@ -22,9 +22,9 @@ const LoadingHeroku = ({ siteUrl }) => {
     <div className="loading-screen">
         <div className="loading-container">
           <p className="loading-message">
-            Giving Heroku.app a moment to warm up...
+            Giving Heroku.app a moment to wake up...
           </p>
-          <div className="loading-animation" ref={building} />
+          <div className="loading-animation heroku" ref={building} />
         </div>
     </div>
     </>

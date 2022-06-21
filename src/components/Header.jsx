@@ -1,19 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import resume from '../assets/William-Hays-Bondy.pdf'
+import NavLinks from "./NavLinks";
 
-const Header = ({activeNav, setActiveNav}) => {
+const Header = ({ activeNav, setActiveNav }) => {
   return (
     <div className="header">
       <div className="nav">
-        <Link className='name' to="/">Hays Bondy</Link>
-        <span className='nav-links'>
-          <Link className='link' to="/">Home</Link>
-          <Link className='link' to="/portfolio">Portfolio</Link>
-          <Link className='link' to="/contact">Contact Me</Link>
-          <a className='link' href={resume}>Resume</a>
+        <Link className="name" to="/">
+          Hays Bondy
+        </Link>
+        <span className="nav-links">
+          <NavLinks />
         </span>
-        <div className='hamburger' onClick={()=>{activeNav ? setActiveNav(false): setActiveNav(true)}}>Hamburger</div>
+        <div
+          className="hamburger"
+          onClick={() => {
+            activeNav ? setActiveNav(false) : setActiveNav(true);
+          }}
+        >
+          Hamburger
+        </div>
       </div>
     </div>
   );

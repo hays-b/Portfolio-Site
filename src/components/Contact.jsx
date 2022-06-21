@@ -71,7 +71,7 @@ const Contact = () => {
           placeholder="message"
           required
         />
-        <input type="submit" value="Send" />
+        <input className="submit" type="submit" value="Send" />
       </form>
     </div>
     </>

@@ -3,9 +3,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-  position: fixed;
+  position: absolute;
   text-align: center;
   transition: .3s;
+  background-color: rgb(20, 26, 29);
 }
 
 .header {
@@ -62,19 +63,30 @@
   position: fixed;
   top: 0;
   right: 0;
-  left: 100%;
+  left: 50%;
   bottom: 0;
-  z-index: 4;
-  background-color: black;
-  transition: .3s;
+  background-color: rgb(21, 21, 21);
   text-align: left;
   display: flex;
   flex-direction: column;
 }
 
-.nav-active {
-  left: 50%;
-  transition: .3s;
+.nav-menu-links {
+  margin: 4em 1em;
+  border-top: 1px solid white;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+}
+
+.nav-menu-link {
+  margin-top: 2vh;
+  color: white;
+  font-size: large;
+  text-decoration: none;
 }
 
 /* ---------------- Portfolio ------------------ */
@@ -356,6 +368,13 @@
   margin: 1em;
   height: 10em;
   width: 90%;
+}
+
+.submit {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
 }
 
 /* ------------------- Loading ------------------- */

@@ -18,9 +18,9 @@ const App = () => {
 
   return (
     <BrowserRouter>
+    <NavMenu setActiveNav={setActiveNav} activeNav={activeNav} />
       <div className={activeNav ? "App moved": "App"}>
         <Header setActiveNav={setActiveNav} />
-        <NavMenu setActiveNav={setActiveNav} activeNav={activeNav} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />

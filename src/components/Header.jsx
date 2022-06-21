@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import resume from '../assets/William-Hays-Bondy.pdf'
 
-const Header = ({setActiveNav}) => {
+const Header = ({activeNav, setActiveNav}) => {
   return (
     <div className="header">
       <div className="nav">
@@ -13,7 +13,7 @@ const Header = ({setActiveNav}) => {
           <Link className='link' to="/contact">Contact Me</Link>
           <a className='link' href={resume}>Resume</a>
         </span>
-        <div className='hamburger' onClick={()=>{setActiveNav(true)}}>Hamburger</div>
+        <div className='hamburger' onClick={()=>{activeNav ? setActiveNav(false): setActiveNav(true)}}>Hamburger</div>
       </div>
     </div>
   );

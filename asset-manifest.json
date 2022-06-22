@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b68a08f.css",
-    "main.js": "/static/js/main.b7d43cca.js",
+    "main.css": "/static/css/main.488efca1.css",
+    "main.js": "/static/js/main.fe62656d.js",
     "static/media/arcade-thumbnail.jpg": "/static/media/arcade-thumbnail.7e48a9403b6adb4cdec3.jpg",
     "static/media/ews-carousel-single.jpg": "/static/media/ews-carousel-single.00922cf3d8ca62aa465c.jpg",
     "static/media/ews-carousel-products.jpg": "/static/media/ews-carousel-products.ed05a827b2b8180a8904.jpg",
@@ -21,11 +21,11 @@
     "static/media/arcade-carousel-title.jpg": "/static/media/arcade-carousel-title.09f1a11f0fef52730a68.jpg",
     "static/media/ews-thumbnail.jpg": "/static/media/ews-thumbnail.f604851382134ee751ec.jpg",
     "index.html": "/index.html",
-    "main.2b68a08f.css.map": "/static/css/main.2b68a08f.css.map",
-    "main.b7d43cca.js.map": "/static/js/main.b7d43cca.js.map"
+    "main.488efca1.css.map": "/static/css/main.488efca1.css.map",
+    "main.fe62656d.js.map": "/static/js/main.fe62656d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b68a08f.css",
-    "static/js/main.b7d43cca.js"
+    "static/css/main.488efca1.css",
+    "static/js/main.fe62656d.js"
   ]
 }

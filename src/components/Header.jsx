@@ -13,12 +13,14 @@ const Header = ({ activeNav, setActiveNav }) => {
           <NavLinks />
         </span>
         <div
-          className="hamburger"
+          className='hamburger'
           onClick={() => {
             activeNav ? setActiveNav(false) : setActiveNav(true);
           }}
         >
-          Hamburger
+          <div className={activeNav ? "line one" : "line"} />
+          <div className={activeNav ? "line two" : "line"} />
+          <div className={activeNav ? "line three" : "line"} />
         </div>
       </div>
     </div>

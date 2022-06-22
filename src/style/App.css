@@ -1,4 +1,4 @@
-.App {
+.main {
   top: 0;
   bottom: 0;
   left: 0;
@@ -70,7 +70,37 @@
 }
 
 .hamburger {
+  padding: 0;
+  margin: 0;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  padding: 0;
+  margin: .15em 0;
+  height: .25em;
+  width: 2em;
+  background-color: white;
+  transition: .3s;
+}
+
+.one {
+  transform: translateY(.55em) rotate(45deg);
+  transition: .3s;
+}
+
+.two {
+  opacity: 0;
+  transition: .3s;
+}
+
+.three {
+  transform: translateY(-.55em) rotate(-45deg);
+  transition: .3s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -120,10 +150,18 @@
 }
 
 .nav-menu-links > * {
-  margin-top: 2vh;
+  border-radius: 5px;
+  padding: 2vh 2vh;
+  width: 100%;
   color: white;
   font-size: large;
   text-decoration: none;
+  transition: .5s
+}
+
+.nav-menu-links > *:hover {
+  background-color: rgb(255, 255, 255, .05);
+  transition: .5s
 }
 
 .underline {
@@ -334,6 +372,9 @@
 }
 
 .carousel-img {
+  display: flex;
+  justify-self: center;
+  align-self: center;
   /* margin: 0;
   padding: 0; */
   width: 100%;

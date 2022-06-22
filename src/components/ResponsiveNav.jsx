@@ -1,7 +1,7 @@
 import React from "react";
 import NavLinks from './NavLinks'
 
-const NavMenu = ({ setActiveNav, activeNav }) => {
+const ResponsiveNav = ({ setActiveNav, activeNav }) => {
 
   return (
     <div className={activeNav ? 'nav-menu nav-active': 'nav-menu'} onClick={()=>{setActiveNav(false)}}>
@@ -12,4 +12,4 @@ const NavMenu = ({ setActiveNav, activeNav }) => {
   );
 };
 
-export default NavMenu;
+export default ResponsiveNav;

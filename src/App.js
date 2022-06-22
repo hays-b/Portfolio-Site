@@ -8,7 +8,7 @@ import {
   ContactSuccess,
   Portfolio,
   SingleViewPage,
-  NavMenu,
+  ResponsiveNav,
 } from "./components";
 import "./style/App.css";
 import portfolioData from "./portfolioData";
@@ -18,8 +18,8 @@ const App = () => {
 
   return (
     <BrowserRouter>
-    <NavMenu setActiveNav={setActiveNav} activeNav={activeNav} />
-      <div className={activeNav ? "App moved": "App"}>
+    <ResponsiveNav setActiveNav={setActiveNav} activeNav={activeNav} />
+      <div className={activeNav ? "main moved": "main"}>
         <Header setActiveNav={setActiveNav} activeNav={activeNav}/>
         <Routes>
           <Route path="/" element={<Home />} />

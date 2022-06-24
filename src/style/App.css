@@ -38,7 +38,7 @@
 
 .name {
   color: rgb(255, 255, 255);
-  font-size: x-large;
+  font-size: 1.5em;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -48,9 +48,23 @@
   transition: 0.3s;
 }
 
-.name:hover {
-  animation: bounce 0.75s 1;
+.name-space {
+  margin-right: .5em
 }
+
+.name:hover span {
+  animation: bounce .75s 1 alternate;
+}
+
+.name span:nth-child(2){animation-delay: .05s;}
+.name span:nth-child(3){animation-delay: .1s;}
+.name span:nth-child(4){animation-delay: .15s;}
+.name span:nth-child(5){animation-delay: .2s;}
+.name span:nth-child(6){animation-delay: .25s;}
+.name span:nth-child(7){animation-delay: .3s;}
+.name span:nth-child(8){animation-delay: .35s;}
+.name span:nth-child(9){animation-delay: .4s;}
+.name span:nth-child(10){animation-delay: .45s;}
 
 @keyframes bounce {
   25% {
@@ -317,6 +331,7 @@
 }
 
 .single-link {
+  font-size: 1.5em;
   margin: 1em;
   color: white;
 }
@@ -425,10 +440,14 @@
   cursor: pointer;
 }
 
+.description-ctn {
+  margin: 2vmin 10vmin;
+}
+
 .description {
   text-align: left;
   font-size: larger;
-  margin: 0.5em;
+  margin: 5vmin;
   padding: 0;
 }
 
@@ -445,6 +464,12 @@
   }
   .count {
     opacity: 0%;
+  }
+  .single-link {
+    font-size: medium;
+  }
+  .description-ctn {
+    margin: 2vmin 5vmin;
   }
   .description {
     font-size: medium;
@@ -501,6 +526,8 @@
   width: 40%;
   border: none;
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: gray;
 }
 
 .message-input {
@@ -514,6 +541,8 @@
   flex-grow: 1;
   border: none;
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: gray;
 }
 
 .submit {

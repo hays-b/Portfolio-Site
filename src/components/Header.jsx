@@ -7,13 +7,22 @@ const Header = ({ activeNav, setActiveNav }) => {
     <div className="header">
       <div className="nav">
         <Link className="name" to="/">
-          Hays Bondy
+          <span>H</span>
+          <span>a</span>
+          <span>y</span>
+          <span>s</span>
+          <span className='name-space'/>
+          <span>B</span>
+          <span>o</span>
+          <span>n</span>
+          <span>d</span>
+          <span>y</span>
         </Link>
         <span className="nav-links">
           <NavLinks />
         </span>
         <div
-          className='hamburger'
+          className="hamburger"
           onClick={() => {
             activeNav ? setActiveNav(false) : setActiveNav(true);
           }}

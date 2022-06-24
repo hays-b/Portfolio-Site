@@ -79,9 +79,15 @@ const SingleViewPage = ({ project }) => {
             See source code
           </a>
         </div>
-        {project.description.map((paragraph, idx) => {
-          return <p key={"description" + idx} className='description'>{paragraph}</p>;
-        })}
+        <div className='description-ctn'>
+          {project.description.map((paragraph, idx) => {
+            return (
+              <p key={"description" + idx} className="description">
+                {paragraph}
+              </p>
+            );
+          })}
+        </div>
       </div>
     </>
   );

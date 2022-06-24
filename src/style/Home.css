@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: clip;
+  overflow: clip;
 }
 
 .circle {
@@ -54,10 +54,6 @@
     transform: translateY(4.25vw);
     animation-timing-function: ease-in;
   }
-  100% {
-    transform: translateY(0);
-    animation-timing-function: ease-in;
-  }
 }
 
 .B {
@@ -74,10 +70,6 @@
   }
   90% {
     transform: translateY(-4.25vw);
-    animation-timing-function: ease-in;
-  }
-  100% {
-    transform: translateY(0);
     animation-timing-function: ease-in;
   }
 }
@@ -193,12 +185,61 @@
   .portfolio {
     animation: none;
   }
-
   .contact {
     animation: none;
   }
-
   .resume {
     animation: none;
+  }
+  .bio-title {
+    animation: none;
+  }
+  .bio {
+    animation: none;
+  }
+  .circle {
+    animation: none;
+  }
+  .HB-ctn {
+    bottom: 50%
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateX(-55vw) translateY(4.25vw);
+      animation-timing-function: ease-out;
+    }
+    90% {
+      transform: translateX(0) translateY(4.25vw);
+      animation-timing-function: ease-in;
+    }
+  }
+
+  @keyframes rise {
+    0% {
+      transform: translateX(55vw) translateY(-4.25vw);
+      animation-timing-function: ease-out;
+    }
+    90% {
+      transform: translateX(0) translateY(-4.25vw);
+      animation-timing-function: ease-in;
+    }
+  }
+
+  .bio-ctn {
+    right: 0;
+    margin: 5vmin;
+  }
+
+  .bio-title {
+    font-size: 2.25em;
+  }
+
+  .bio {
+    font-size: medium
+  }
+
+  .routes-ctn {
+    display: none;
   }
 }

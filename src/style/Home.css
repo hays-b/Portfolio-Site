@@ -1,0 +1,123 @@
+.home-page {
+    overflow-y: clip;
+  }
+  
+  .HB-ctn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .initial {
+    font-size: 30vw;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .H {
+    margin-right: 17.5vw;
+    margin-bottom: 8.5vw;
+    animation: fall 2s 1;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-55vh);
+      animation-timing-function: ease-out;
+    }
+    /* 80% {
+      transform: translateY(5vh);
+      animation-timing-function: ease-in;
+    } */
+    90% {
+      transform: translateY(5vh);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-in;
+    }
+  }
+  
+  .B {
+    position: absolute;
+    padding-left: 17.5vw;
+    padding-top: 8.5vw;
+    animation: rise 2s 1;
+  }
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(55vh);
+      animation-timing-function: ease-out;
+    }
+    /* 80% {
+      transform: translateY(0);
+      animation-timing-function: ease-in;
+    } */
+    90% {
+      transform: translateY(-5vh);
+      animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-in;
+      }
+  }
+
+  .routes-ctn {
+    /* padding-top: 4em; */
+    position: fixed;
+    top: 0;
+    right: 60%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+
+.link {
+    margin: 2.5vmin;
+    font-size: 5vmin;
+}
+
+.portfolio {
+    animation: portfolio .5s 1;
+}
+
+.contact {
+    animation: contact 1s 1;
+}
+
+.resume {
+    animation: resume 1.5s 1;
+}
+
+@keyframes portfolio {
+    0% {
+      transform: translateX(-20vh);
+      animation-timing-function: ease-out;
+    }
+  }
+
+  @keyframes contact {
+    0% {
+      transform: translateX(-40vh);
+      animation-timing-function: ease-out;
+    }
+  }
+
+  @keyframes resume {
+    0% {
+      transform: translateX(-60vh);
+      animation-timing-function: ease-out;
+    }
+  }

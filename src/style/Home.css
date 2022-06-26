@@ -21,14 +21,14 @@
   border-radius: 50%;
   background-color: black;
   z-index: 0;
-  animation: grow 1.5s 1;
+  animation: grow 2s 1;
 }
 
 @keyframes grow {
   0% {
     transform: scale(0);
     animation-timing-function: ease-out;
-  }
+}
 }
 
 .initial {
@@ -42,7 +42,7 @@
 .H {
   margin-right: 17.5vw;
   margin-bottom: 8.5vw;
-  animation: fall 1.5s 1;
+  animation: fall 2s 1;
 }
 
 @keyframes fall {
@@ -60,7 +60,7 @@
   position: absolute;
   padding-left: 17.5vw;
   padding-top: 8.5vw;
-  animation: rise 1.5s 1;
+  animation: rise 2s 1;
 }
 
 @keyframes rise {
@@ -77,47 +77,51 @@
 /* -------------------- bio -------------------- */
 
 .bio-ctn {
-    position: absolute;
-    top: 0;
-    right: 70%;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  position: absolute;
+  top: 0;
+  right: 70%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .bio-title {
-    font-size: 2vw;
-    font-weight: bold;
-    color: inherit;
-    transition: 0.5s;
-    word-wrap: normal;
-    animation: bio .75s 1
-  }
+.bio-title {
+  font-size: 4vw;
+  font-weight: bold;
+  color: inherit;
+  transition: 0.5s;
+  word-wrap: normal;
+  animation: bio-title 0.4s 1;
+}
 
-  .bio {
-    font-size: 1.5vw;
-    color: inherit;
-    transition: 0.5s;
-    word-wrap: normal;
-    animation: bio 1.25s 1
-  }
+.bio {
+  font-size: 1.5vw;
+  color: inherit;
+  transition: 0.5s;
+  word-wrap: normal;
+  animation: bio 1.25s 1;
+}
 
-  @keyframes bio-title {
-    0% {
+@keyframes bio-title {
+  /* 0% {
       transform: translateX(-25vw);
       animation-timing-function: ease-out;
-    }
+    } */
+  0% {
+    transform: scale(0);
+    animation-timing-function: ease-out;
   }
-  
-  @keyframes bio {
-    0% {
-      transform: translateX(-50vw);
-      animation-timing-function: ease-out;
-    }
+}
+
+@keyframes bio {
+  0% {
+    transform: translateX(-50vw);
+    animation-timing-function: ease-out;
   }
+}
 
 /* -------------------- routes -------------------- */
 
@@ -201,7 +205,11 @@
     animation: none;
   }
   .HB-ctn {
-    bottom: 50%
+    bottom: 50%;
+  }
+
+  .H {
+    animation: fall 1s 1;
   }
 
   @keyframes fall {
@@ -209,16 +217,26 @@
       transform: translateX(-55vw) translateY(4.25vw);
       animation-timing-function: ease-out;
     }
+    70% {
+      transform: translateX(0) translateY(4.25vw);
+    }
     90% {
       transform: translateX(0) translateY(4.25vw);
       animation-timing-function: ease-in;
     }
   }
 
+  .B {
+    animation: rise 1s 1;
+  }
+
   @keyframes rise {
     0% {
       transform: translateX(55vw) translateY(-4.25vw);
       animation-timing-function: ease-out;
+    }
+    70% {
+      transform: translateX(0) translateY(-4.25vw);
     }
     90% {
       transform: translateX(0) translateY(-4.25vw);
@@ -232,11 +250,11 @@
   }
 
   .bio-title {
-    font-size: 2.25em;
+    font-size: 2.5em;
   }
 
   .bio {
-    font-size: medium
+    font-size: medium;
   }
 
   .routes-ctn {

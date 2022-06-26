@@ -24,7 +24,7 @@ const Home = () => {
         </a>
       </div>
       <div className="bio-ctn">
-      <p className="bio-title">Hi, I'm Hays Bondy</p>
+      <p className="bio-title">Hi, I'm Hays</p>
         <p className="bio">I'm a software developer, particularly interested in front-end web design.  </p>
       </div>
     </div>

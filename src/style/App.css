@@ -353,9 +353,6 @@
 
 .carousel-btn {
   position: absolute;
-  display: flex;
-  justify-self: center;
-  justify-content: center;
   align-items: center;
   z-index: 1;
   color: white;
@@ -384,9 +381,6 @@
 
 .slide {
   position: absolute;
-  display: flex;
-  justify-self: center;
-  align-self: center;
   opacity: 0;
   transition: 1s;
 }
@@ -462,8 +456,11 @@
   .active {
     transition: 0s;
   }
-  .count {
+  /* .count {
     opacity: 0%;
+  } */
+  .dot {
+    display: none;
   }
   .single-link {
     font-size: medium;

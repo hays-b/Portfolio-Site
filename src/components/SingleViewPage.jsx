@@ -37,7 +37,7 @@ const SingleViewPage = ({ project }) => {
               prevSlide();
             }}
           >
-            {"<"}
+            &#8678;
           </button>
           <button
             className="carousel-btn right"
@@ -45,10 +45,10 @@ const SingleViewPage = ({ project }) => {
               nextSlide();
             }}
           >
-            {">"}
+            &#8680;
           </button>
           <p className="count">
-            {current + 1} of {project.carousel.length}
+            {current + 1}/{project.carousel.length}
           </p>
           {project.carousel.map((pic, idx) => {
             return (

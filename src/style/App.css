@@ -373,7 +373,7 @@
   font-size: xx-large;
   background-color: rgb(0, 0, 0, 0.5);
   border: none;
-  padding: 2.5vmin;
+  padding: 2vmin;
   margin: 0;
   border-radius: 5px;
   cursor: pointer;
@@ -381,8 +381,8 @@
 
 .carousel-btn:hover,
 .carousel-btn:active {
-  border: 1px solid white;
   outline: none;
+  background-color: rgb(0, 0, 0, 0.65);
 }
 
 .left {
@@ -400,16 +400,21 @@
   left: 0;
   bottom: 0;
   opacity: 0;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .count {
   position: absolute;
   margin: 0;
-  padding: 2vmin;
+  padding: 2vmin 4vmin;
   top: 0;
   right: 0;
+  /* color: white; */
+  /* border-radius: 5px; */
+  background-color: rgb(0, 0, 0, .5);
   z-index: 1;
+  opacity: 0%
 }
 
 .white {
@@ -422,6 +427,7 @@
 
 .active {
   opacity: 100;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -468,15 +474,15 @@
     margin-top: 0;
     border: none;
   }
-  .slide {
+  /* .slide {
     transition: 0s;
   }
   .active {
     transition: 0s;
-  }
-  /* .count {
-    opacity: 0%;
   } */
+  .count {
+    opacity: 100%;
+  }
   .dot {
     display: none;
   }
@@ -488,6 +494,9 @@
   }
   .description {
     font-size: medium;
+  }
+  .carousel-btn {
+    font-size: x-large;
   }
 }
 

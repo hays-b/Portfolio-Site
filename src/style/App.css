@@ -139,21 +139,27 @@
   height: 0.25em;
   width: 2em;
   background-color: rgb(214, 214, 214);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .one {
+  -webkit-transform: translateY(-0.57em) rotate(45deg);
   transform: translateY(0.57em) rotate(-45deg);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .two {
   opacity: 0;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .three {
+  -webkit-transform: translateY(-0.57em) rotate(45deg);
   transform: translateY(-0.57em) rotate(45deg);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -182,12 +188,14 @@
   text-align: left;
   display: flex;
   flex-direction: column;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .nav-active {
   right: 0;
   left: 50%;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -247,8 +255,8 @@
   border: 1px solid rgb(74, 74, 74);
   padding: 2vmin 2vmin 0 2vmin;
   margin: 3.5vmin 2vmin 0.5vmin 2vmin;
+  width: 28vw;
   transition: 0.3s;
-  width: 28%;
 }
 
 .portfolio-title {
@@ -270,8 +278,10 @@
   position: relative;
   border: 1px solid rgb(74, 74, 74);
   border-radius: 5px;
-  width: 100%;
+  width: 25.5vw;
+  height: 25.5vw;
   padding-bottom: 0%;
+  transition: 0.3s;
 }
 
 .portfolio-card:hover .portfolio-image {
@@ -298,10 +308,14 @@
 
 @media only screen and (max-width: 768px) {
   .portfolio-card {
-    width: 45%;
+    width: 45vw;
   }
   .portfolio-title {
     font-size: medium;
+  }
+  .portfolio-image {
+    width: 40vw;
+    height: 40vw
   }
 }
 

@@ -56,8 +56,8 @@ const portfolioData = [
       },
     ],
     description: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "This was a group project completed as part of my Fullstack Academy curriculum. It is a react app which utilizes a PostgreSQL database. Along with two partners, I helped create a template e-commerce site with a fully functioning backend that allows users to create accounts, view products, and add them to their carts for checkout.",
+      "My personal responsibilities were focused on the products and searchbar, along with some contributions to cart functionality. I built out the products database, as well as the front-end functionality of adding, editing, and removing products on the site. And of course, all CSS styling involving products.",
     ],
   },
   // ------------ Elite Web Services end --------------

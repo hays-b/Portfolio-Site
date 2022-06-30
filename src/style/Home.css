@@ -19,7 +19,7 @@
   height: 35vw;
   width: 35vw;
   border-radius: 50%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   z-index: 0;
   animation: grow 2s 1;
 }
@@ -28,7 +28,7 @@
   0% {
     transform: scale(0);
     animation-timing-function: ease-out;
-}
+  }
 }
 
 .initial {
@@ -47,7 +47,7 @@
 
 @keyframes fall {
   0% {
-    transform: translateY(-55vh);
+    transform: translateY(-55vh) rotate(90deg);
     animation-timing-function: ease-out;
   }
   90% {
@@ -65,7 +65,7 @@
 
 @keyframes rise {
   0% {
-    transform: translateY(55vh);
+    transform: translateY(55vh) rotate(90deg);
     animation-timing-function: ease-out;
   }
   90% {
@@ -98,7 +98,11 @@
 }
 
 .bio {
-  font-size: 1.5vw;
+  font-size: 1.75vw;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align-last: center;
+  margin: 0 1.5vw;
   color: inherit;
   transition: 0.5s;
   word-wrap: normal;
@@ -106,10 +110,6 @@
 }
 
 @keyframes bio-title {
-  /* 0% {
-      transform: translateX(-25vw);
-      animation-timing-function: ease-out;
-    } */
   0% {
     transform: scale(0);
     animation-timing-function: ease-out;
@@ -118,7 +118,13 @@
 
 @keyframes bio {
   0% {
-    transform: translateX(-50vw);
+    /* transform: translateX(-50vw); */
+    transform: scale(0);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    /* transform: translateX(-50vw); */
+    transform: scale(0);
     animation-timing-function: ease-out;
   }
 }
@@ -186,6 +192,9 @@
 
 /* -------------------- responsive media -------------------- */
 @media only screen and (max-width: 768px) {
+  .routes-ctn {
+    display: none;
+  }
   .portfolio {
     animation: none;
   }
@@ -206,6 +215,7 @@
   }
   .HB-ctn {
     bottom: 50%;
+    animation: none;
   }
 
   .H {
@@ -214,16 +224,16 @@
 
   @-webkit-keyframes fall {
     0% {
-        -webkit-transform: translateX(-49vw) translateY(4.25vw);
-        -webkit-animation-timing-function: ease-out;
-      }
-      70% {
-        -webkit-transform: translateX(0) translateY(4.25vw);
-      }
-      90% {
-        -webkit-transform: translateX(0) translateY(4.25vw);
-        -webkit-animation-timing-function: ease-in;
-      }
+      -webkit-transform: translateX(-49vw) translateY(4.25vw);
+      -webkit-animation-timing-function: ease-out;
+    }
+    70% {
+      -webkit-transform: translateX(0) translateY(4.25vw);
+    }
+    90% {
+      -webkit-transform: translateX(0) translateY(4.25vw);
+      -webkit-animation-timing-function: ease-in;
+    }
   }
 
   @keyframes fall {
@@ -246,16 +256,16 @@
 
   @-webkit-keyframes rise {
     0% {
-        -webkit-transform: translateX(49vw) translateY(-4.25vw);
-        -webkit-animation-timing-function: ease-out;
-      }
-      70% {
-        -webkit-transform: translateX(0) translateY(-4.25vw);
-      }
-      90% {
-        -webkit-transform: translateX(0) translateY(-4.25vw);
-        -webkit-animation-timing-function: ease-in;
-      }
+      -webkit-transform: translateX(49vw) translateY(-4.25vw);
+      -webkit-animation-timing-function: ease-out;
+    }
+    70% {
+      -webkit-transform: translateX(0) translateY(-4.25vw);
+    }
+    90% {
+      -webkit-transform: translateX(0) translateY(-4.25vw);
+      -webkit-animation-timing-function: ease-in;
+    }
   }
 
   @keyframes rise {
@@ -283,9 +293,5 @@
 
   .bio {
     font-size: medium;
-  }
-
-  .routes-ctn {
-    display: none;
   }
 }

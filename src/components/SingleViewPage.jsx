@@ -67,20 +67,26 @@ const SingleViewPage = ({ project }) => {
         </ul>
         <h1 className="single-title">{project.title}</h1>
         <div className="a-ctn">
-          <Link
-            className="single-link"
-            to="#loading"
-            // Because IOS devices don't fire useEffects upon navigating back, I added a URL hash which renders the loading component.
-            // Then once in the LoadingHeroku component, the current URL is replaced with the live site URL, so the #loading route is erased from the location history.
-          >
-            See live site
-          </Link>
+          {project.siteUrl.includes("herokuapp.com") ? (
+            <Link
+              className="single-link"
+              to="#loading"
+              // Because IOS devices don't fire useEffects upon navigating back, I added a URL hash which renders the loading component.
+              // Then once in the LoadingHeroku component, the current URL is replaced with the live site URL, so the #loading route is erased from the location history.
+            >
+              See live site
+            </Link>
+          ) : (
+            <a className="single-link" href={project.siteUrl}>
+              See live site
+            </a>
+          )}
           <a className="single-link" href={project.codeUrl}>
             See source code
           </a>
         </div>
-        <div className='description-ctn'>
-          {project.description.map((paragraph, idx) => {
+        <div className="description-ctn">
+          {project.description?.map((paragraph, idx) => {
             return (
               <p key={"description" + idx} className="description">
                 {paragraph}

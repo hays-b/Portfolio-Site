@@ -99,8 +99,8 @@ const portfolioData = [
       },
     ],
     description: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "This was a fun solo project made using HTML canvas, React, and PostgreSQL. Users can play either by using the arrow keys or the buttons provided at the bottom of the screen.",
+      "If a user gets a highscore while playing on normal settings, they can add their name to the database for all users to see. Users can also play on customized settings by clicking the cog in the top right. All of the visuals were created using CSS and I drew background using Procreate.",
     ],
   },
   // ------------ Retro Arcade Snake end --------------
@@ -130,8 +130,8 @@ const portfolioData = [
       },
     ],
     description: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "This project started as a pair-programming exercise as part of my Fullstack Academy curriculum. I created a functioning backend with one partner using PostgreSQL and JavaScript. And later created a functioning front-end with another partner, using React and CSS. I decided to revisit these two projects and put them together to create a full-stack app. This is end result.",
+      "This is simply a site that allows users to create fitness routines and post them for others to see. Users can also create and post individual activities which other users can incorporate into their own routines.",
     ],
   },
   // ------------ Fitness Tracker end --------------
